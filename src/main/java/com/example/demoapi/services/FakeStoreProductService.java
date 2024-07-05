@@ -44,6 +44,11 @@ public class FakeStoreProductService implements ProductService{
         return convertFakeStoreDtoToProduct(fakeStoreProductDto1);
     }
 
+    @Override
+    public Product createProduct(Product product) {
+        return null;
+    }
+
     private Product convertFakeStoreDtoToProduct(FakeStoreProductDto fakeStoreProductDto) {
         if(fakeStoreProductDto == null) return null;
         Product product = new Product();
