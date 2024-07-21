@@ -1,6 +1,6 @@
-package com.example.demoapi.services;
+package com.sayantan.productservice.services;
 
-import com.example.demoapi.models.Product;
+import com.sayantan.productservice.models.Product;
 
 import java.util.List;
 

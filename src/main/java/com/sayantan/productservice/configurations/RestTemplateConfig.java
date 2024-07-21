@@ -1,4 +1,4 @@
-package com.example.demoapi.configurations;
+package com.sayantan.productservice.configurations;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;

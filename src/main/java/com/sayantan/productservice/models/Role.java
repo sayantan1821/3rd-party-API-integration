@@ -1,4 +1,4 @@
-package com.example.demoapi.models;
+package com.sayantan.productservice.models;
 
 import lombok.Getter;
 import lombok.Setter;

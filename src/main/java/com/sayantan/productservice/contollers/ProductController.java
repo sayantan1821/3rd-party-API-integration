@@ -1,20 +1,18 @@
-package com.example.demoapi.contollers;
+package com.sayantan.productservice.contollers;
 
-import com.example.demoapi.commons.Auth;
-import com.example.demoapi.dtos.ErrorResponseDTO;
-import com.example.demoapi.dtos.UserDTO;
-import com.example.demoapi.exceptions.InvalidTokenException;
-import com.example.demoapi.models.Product;
-import com.example.demoapi.services.ProductService;
+import com.sayantan.productservice.commons.Auth;
+import com.sayantan.productservice.dtos.ErrorResponseDTO;
+import com.sayantan.productservice.dtos.UserDTO;
+import com.sayantan.productservice.exceptions.InvalidTokenException;
+import com.sayantan.productservice.models.Product;
+import com.sayantan.productservice.services.ProductService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController

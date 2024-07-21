@@ -1,8 +1,8 @@
-package com.example.demoapi.services;
+package com.sayantan.productservice.services;
 
-import com.example.demoapi.dtos.FakeStoreProductDto;
-import com.example.demoapi.models.Category;
-import com.example.demoapi.models.Product;
+import com.sayantan.productservice.dtos.FakeStoreProductDto;
+import com.sayantan.productservice.models.Category;
+import com.sayantan.productservice.models.Product;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpMessageConverterExtractor;

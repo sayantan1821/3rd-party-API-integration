@@ -1,4 +1,4 @@
-package com.example.demoapi.models;
+package com.sayantan.productservice.models;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

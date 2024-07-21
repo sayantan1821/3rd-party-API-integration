@@ -1,6 +1,6 @@
-package com.example.demoapi.dtos;
+package com.sayantan.productservice.dtos;
 
-import com.example.demoapi.models.Role;
+import com.sayantan.productservice.models.Role;
 import lombok.Getter;
 import lombok.Setter;
 

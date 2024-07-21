@@ -1,7 +1,7 @@
-package com.example.demoapi.commons;
+package com.sayantan.productservice.commons;
 
-import com.example.demoapi.dtos.UserDTO;
-import com.example.demoapi.exceptions.InvalidTokenException;
+import com.sayantan.productservice.dtos.UserDTO;
+import com.sayantan.productservice.exceptions.InvalidTokenException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;

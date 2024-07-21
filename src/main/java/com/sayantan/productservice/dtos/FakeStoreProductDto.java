@@ -1,4 +1,4 @@
-package com.example.demoapi.dtos;
+package com.sayantan.productservice.dtos;
 
 import lombok.Getter;
 import lombok.Setter;

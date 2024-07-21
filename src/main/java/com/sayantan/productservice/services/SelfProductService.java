@@ -1,9 +1,9 @@
-package com.example.demoapi.services;
+package com.sayantan.productservice.services;
 
-import com.example.demoapi.models.Category;
-import com.example.demoapi.models.Product;
-import com.example.demoapi.repositories.CategoryRepository;
-import com.example.demoapi.repositories.ProductRepository;
+import com.sayantan.productservice.models.Category;
+import com.sayantan.productservice.models.Product;
+import com.sayantan.productservice.repositories.CategoryRepository;
+import com.sayantan.productservice.repositories.ProductRepository;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 

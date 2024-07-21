@@ -1,6 +1,6 @@
-package com.example.demoapi.repositories;
+package com.sayantan.productservice.repositories;
 
-import com.example.demoapi.models.Category;
+import com.sayantan.productservice.models.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
