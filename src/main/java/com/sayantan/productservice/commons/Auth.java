@@ -16,7 +16,7 @@ public class Auth {
     public UserDTO validateToken(String token) {
         ResponseEntity<UserDTO> responseEntity = restTemplate.getForEntity("http://localhost:8080/users/validate/" + token, UserDTO.class);
         if(responseEntity.getBody() == null) {
-            throw new InvalidTokenException("Provided token is not valid!");
+            throw new InvalidTokenException("Failed to validate authentication token!");
         }
         return responseEntity.getBody();
     }
