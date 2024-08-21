@@ -27,17 +27,17 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getProductById(@PathVariable("id") Long id, @RequestHeader("authToken") String token) throws Exception {
+    public ResponseEntity<?> getProductById(@PathVariable("id") Long id) throws Exception {
         try {
-            UserDTO user = auth.validateToken(token);
+//            UserDTO user = auth.validateToken(token);
             Product product = productService.getProductById(id);
             if(product == null) {
                 return new ResponseEntity<>("Product not found with id " + id, HttpStatus.BAD_REQUEST);
             }
             return new ResponseEntity<>(product, HttpStatus.OK);
-        } catch (InvalidTokenException err) {
-            ErrorResponseDTO errorResponse = new ErrorResponseDTO(err.getMessage(), "");
-            return new ResponseEntity<>(errorResponse, HttpStatus.FORBIDDEN);
+//        } catch (InvalidTokenException err) {
+//            ErrorResponseDTO errorResponse = new ErrorResponseDTO(err.getMessage(), "");
+//            return new ResponseEntity<>(errorResponse, HttpStatus.FORBIDDEN);
         } catch (RuntimeException err) {
             System.out.println(err.getMessage());
             ErrorResponseDTO errorResponse = new ErrorResponseDTO(err.getMessage(), getStackTraceAsString(err));
