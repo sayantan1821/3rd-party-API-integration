@@ -56,7 +56,7 @@ public class ProductController {
         return productService.replaceProduct(id, productBody);
     }
 
-    @PostMapping
+    @PostMapping()
     public Product createProduct(@RequestBody Product product) {
         return productService.createProduct(product);
     }
